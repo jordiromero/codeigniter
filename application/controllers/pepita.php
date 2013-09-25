@@ -1,7 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Pepita extends CI_Controller {
 	
+	public function pepita()
+	{
+		echo "<h1>Al loro!!!!!</h1>";
+	}
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -17,10 +22,10 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	/*public function index()
 	{
 		$this->load->view('welcome_message');
-	}
+	}**/
 }
 
 /* End of file welcome.php */
