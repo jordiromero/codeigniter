@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class User extends CI_Controller {
+class Table extends CI_Controller {
 	
 	/**
 	 * Index Page for this controller.
@@ -17,20 +17,10 @@ class User extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function create()
+	public function llista($fila, $columna)
 	{
 		//echo 'Aqui pots crear el teu usuari';
-		$this->load->view('create');
-	}
-	public function delete()
-	{
-		//echo 'Aqui pots borrar el teu usuari';
-		$this->load->view('delete');
-	}
-	public function modify()
-	{
-		//echo 'Aqui pots modificar el teu usuari';
-		$this->load->view('modify');
+		$this->load->view('list');
 	}
 }
 
