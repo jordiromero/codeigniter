@@ -17,10 +17,10 @@ class Table extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function llista($fila, $columna)
+	public function taula()
 	{
-		//echo 'Aqui pots crear el teu usuari';
-		$this->load->view('list');
+		//Aquí carreguem la vista que ens mostrarà la nostra taula
+		$this->load->view('create_table');
 	}
 }
 
