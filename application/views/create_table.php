@@ -13,7 +13,7 @@
 	</head>
 	
 	<body>
-	<table id="usuaris">
+	<table id="usuaris" border="1">
 
 	<tr>
 	<th> Text de cap&ccedil;alera </th>
