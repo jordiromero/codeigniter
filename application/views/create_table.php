@@ -24,7 +24,7 @@ $(document).ready(function() {
 	</head>
 	
 	<body>
-	<table id="exemple" border="1" class="display"  width="100%">
+	<table id="exemple" border="0" class="display"  width="100%">
 	<thead>	
 
 	<tr>
