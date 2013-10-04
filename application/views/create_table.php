@@ -1,65 +1,57 @@
+<!DOCTYPE html>
 <html>
-	<head>
-			<!-- <link rel="stylesheet" type="text/css" href="/datatables/demo_table.css" />
-			<link rel="stylesheet" type="text/css" href="/datatables/demo_page.css" /> -->
-	<link rel="stylesheet" type="text/css" href="/datatables/bootstrap/css/bootstrap.min.css" />
-	<!-- DataTables CSS -->
-<!--<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">-->
- 
-<!-- jQuery -->
-<!--<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script> -->
- 
-<!-- DataTables -->
-<!--<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script> -->
-<!--<script type="text/javascript" language="javascript" src="/datatables/media/jquery.js"></script>
-<script type="text/javascript" language="javascript" src="/datatables/media/jquery.dataTables.js"></script>
-<script type="text/javascript" charset="utf-8"></script>
-<script src="/datatables/media/jquery.dataTables.js"></script> 	
-<script type="text/javascript">
-$(document).ready(function() {
-$('#example').dataTable();
-} );
-</script> -->
-<script src="http://code.jquery.com/jquery.js"></script>  
-<script src="/datatables/bootstrap/js/bootstrap.min.js"></script>  
-
+<head>
+<title>Creaci&oacute; d'usuaris</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="/datatables/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="/datatables/bootstrap/js/bootstrap.min.js"></script>
 
 	
 	
 	</head>
 	
 	<body>
-<<<<<<< HEAD
-	<table id="exemple" border="0" class="display"  width="100%">
-=======
-	<table id="exemple" class="display" border="1"  width="100%">
->>>>>>> e026bf87d1ef937262e1cc371bb9309e5111b772
+		<form action= "../user/" method="post">
+	<table id="exemple" class="table table-striped"  width="100%">
 	<thead>	
 
 	<tr>
-	<th> Text de cap&ccedil;alera </th>
-	<th> Text de cap&ccedil;alera </th>
-	<th> Text de cap&ccedil;alera</th>
+	<th> Nom </th>
+	<th> Cognom 1 </th>
+	<th> Cognom 2</th>
 	</tr>
 	</thead>
 	<tbody>
 	<tr>
-	<td> Text de cel&middot;la </td>
-	<td> Text de cel&middot;la </td>
-	<td> Text de cel&middot;la</td>
+	<td> Usuari </td>
+	<td> 1 </td>
+	<td> 2</td>
+	<td><input type="submit" value="Modifica" ></td>
+	<td><input type="submit" value="Eliminar"></td>
 	</tr>
 	<tr>
-	<td> Text de cel&middot;la </td>
-	<td> Text de cel&middot;la </td>
-	<td> Text de cel&middot;la</td>
+	<td> Usuari</td>
+	<td> 3 </td>
+	<td> 4</td>
+	<td><input type="submit" value="Modifica"></td>
+	<td><input type="submit" value="Eliminar"></td>
 	</tr>
 	<tr>
-	<td> Text de cel&middot;la </td>
-	<td> Text de cel&middot;la </td>
-	<td> Text de cel&middot;la</td>
+	<td> Usuari </td>
+	<td> 5 </td>
+	<td> 6</td>
+	<td><input type="submit" value="Modifica"></td>
+	<td><input type="submit" value="Eliminar"></td>
+	</tr>
+	<tr>
+	<td><input type="submit" value="Crea" id="create"></td>
 	</tr>
 	</tbody>
 </table>
+</form>
 	
 	</body>
 </html>
