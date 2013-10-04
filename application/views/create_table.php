@@ -1,8 +1,8 @@
 <html>
 	<head>
-		<style type="text/css" title="currentStyle">
-	
-	</style>
+			<!-- <link rel="stylesheet" type="text/css" href="/datatables/demo_table.css" />
+			<link rel="stylesheet" type="text/css" href="/datatables/demo_page.css" /> -->
+	<link rel="stylesheet" type="text/css" href="/datatables/bootstrap/css/bootstrap.min.css" />
 	<!-- DataTables CSS -->
 <!--<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">-->
  
@@ -11,20 +11,29 @@
  
 <!-- DataTables -->
 <!--<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script> -->
-<script type="text/javascript" language="javascript" src="/usr/share/javascript/jquery/jquery.js"></script>
-<script type="text/javascript" language="javascript" src="/usr/share/javascript/jquery/datatables/jquery.dataTables.js"></script>
-<script type="text/javascript" charset="utf-8">
-<script src="/usr/share/javascript/jquery/datatables/jquery.dataTables.js">	
+<!--<script type="text/javascript" language="javascript" src="/datatables/media/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="/datatables/media/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf-8"></script>
+<script src="/datatables/media/jquery.dataTables.js"></script> 	
+<script type="text/javascript">
 $(document).ready(function() {
- $('#example').dataTable();
+$('#example').dataTable();
 } );
-</script> 
+</script> -->
+<script src="http://code.jquery.com/jquery.js"></script>  
+<script src="/datatables/bootstrap/js/bootstrap.min.js"></script>  
+
+
 	
 	
 	</head>
 	
 	<body>
+<<<<<<< HEAD
 	<table id="exemple" border="0" class="display"  width="100%">
+=======
+	<table id="exemple" class="display" border="1"  width="100%">
+>>>>>>> e026bf87d1ef937262e1cc371bb9309e5111b772
 	<thead>	
 
 	<tr>
