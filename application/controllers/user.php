@@ -22,12 +22,12 @@ class User extends CI_Controller {
 		//echo 'Aqui pots crear el teu usuari';
 		$this->load->view('create');
 	}
-	public function delete($id)
+	public function delete()
 	{
 		//echo 'Aqui pots borrar el teu usuari';
 		$this->load->view('delete');
 	}
-	public function modify($id)
+	public function modify()
 	{
 		//echo 'Aqui pots modificar el teu usuari';
 		$this->load->view('modify');

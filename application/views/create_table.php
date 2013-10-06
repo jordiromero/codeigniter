@@ -4,17 +4,13 @@
 <title>Creaci&oacute; d'usuaris</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
-<link href="/datatables/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-</head>
+<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <script src="http://code.jquery.com/jquery.js"></script>
-<script src="/datatables/bootstrap/js/bootstrap.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+</head>
 
 	
-	
-	</head>
-	
 	<body>
-		<form action= "../user/" method="post">
 	<table id="exemple" class="table table-striped"  width="100%">
 	<thead>	
 
@@ -29,7 +25,7 @@
 	<td> Usuari </td>
 	<td> 1 </td>
 	<td> 2</td>
-	<td><input type="submit" value="Modifica" ></td>
+	<td><input type="submit" value="Modifica"></td>
 	<td><input type="submit" value="Eliminar"></td>
 	</tr>
 	<tr>
@@ -47,11 +43,10 @@
 	<td><input type="submit" value="Eliminar"></td>
 	</tr>
 	<tr>
-	<td><input type="submit" value="Crea" id="create"></td>
+	<td><input type="submit" value="Crea"></td>
 	</tr>
 	</tbody>
 </table>
-</form>
 	
 	</body>
 </html>
