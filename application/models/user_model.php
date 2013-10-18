@@ -1,5 +1,17 @@
 <?php 
 
+class User_model extends CI_Model{
 
-echo $data;
+
+function __construct(){
+	parent::__construct();
+
+}
+function hello(){
+
+	return "Hello world";
+}
+
+}
+
 ?>
