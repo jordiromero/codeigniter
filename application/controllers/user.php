@@ -17,10 +17,17 @@ class User extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct()
+       {
+           
+            parent::__construct(); 
+            $this->load->database();
+       }
 	public function create()
 	{
 		//echo 'Aqui pots crear el teu usuari';
 		$this->load->view('create');
+		//$this->load->database();
 	}
 	public function delete()
 	{
@@ -34,5 +41,5 @@ class User extends CI_Controller {
 	}
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of file user.php */
+/* Location: ./application/controllers/user.php */
