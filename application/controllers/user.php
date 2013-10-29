@@ -23,11 +23,21 @@ class User extends CI_Controller {
             parent::__construct(); 
             $this->load->database();
        }
+
 	public function create()
 	{
 		//echo 'Aqui pots crear el teu usuari';
 		$this->load->view('create');
-		//$this->load->database();
+		$this->db->select('titulo, contenido, $fecha');
+		$query = $this->db->get('City');
+		//if ($query->num_rows() > 0)
+		
+		//	foreach ($query->result() as $row) {
+		//		echo $row->ID;
+		//		echo $row->Name;
+		//		echo $row->CountryCode;
+		//	}
+		
 	}
 	public function delete()
 	{

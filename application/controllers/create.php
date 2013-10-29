@@ -21,6 +21,7 @@ class Create extends CI_Controller {
 	{
 		echo "Aqu&iacute; pots crear el teu usuari";
 		//$this->load->view('crea.php');
+		
 	}
 }
 
