@@ -81,7 +81,7 @@ Crea el teu usuari aqu&iacute; <a href="create"><input type="button" class="btn 
 
 <footer>
         <p align="center">&copy; Jordi Romero</p>
-        <p><?php echo $hello;?></p>
+      <!--  <p><?php echo $hello;?></p> -->
 	</footer>
 </body>
 
