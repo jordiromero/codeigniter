@@ -40,7 +40,14 @@
 </br>
 </br>
 Crea el teu usuari aqu&iacute; <a href="create"><input type="button" class="btn btn-sm btn-success"  name="boton" value="Registrat"/></a></br>
-<table id="taula" class="table table-hover table-condensed" border="1">
+
+foreach ($query->result() as $user)
+{
+   echo $user->title;
+   echo $user->name;
+   echo $user->body;
+}
+<!--<table id="taula" class="table table-hover table-condensed" border="1">
 <thead>
         <tr>
 	    <th>id</th>
@@ -77,7 +84,8 @@ Crea el teu usuari aqu&iacute; <a href="create"><input type="button" class="btn 
 	    <a href="delete/3"><input type="button" name="boton" class="btn btn-sm btn-danger" value="Eliminar"/></td></a>
         </tr>
     </tbody>
-</table>
+</table>-->
+
 
 <footer>
         <p align="center">&copy; Jordi Romero</p>

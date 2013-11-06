@@ -8,15 +8,16 @@ $this->load->database();
 
 } 
 
-public function insert()
+public function delete()
  {
  $data = array(
-'ID'=> 15000,
-'Name'=> 'Harlem',
+'ID'=> 15007,
+'Name'=> 'Parla',
 'CountryCode'=> 'ESP'
 );
-$this->db->insert('City', $data);
-//$this->db->affected_rows();
+$this->db->where('ID', 15007);
+$this->db->delete('City');
+echo 'Files esborrades ' . $this->db->affected_rows();
  }
  }
  ?>

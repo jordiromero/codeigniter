@@ -12,6 +12,11 @@ function hello(){
 	return "Hello world";
 }
 
+function getUser(){
+
+
+}
+
 }
 
 ?>
