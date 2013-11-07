@@ -12,8 +12,11 @@ function hello(){
 	return "Hello world";
 }
 
+
 function getUser(){
 
+$this->load->database();
+$this->db->query = ("select * from 'usuaris'");
 
 }
 

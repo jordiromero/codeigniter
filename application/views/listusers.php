@@ -40,13 +40,20 @@
 </br>
 </br>
 Crea el teu usuari aqu&iacute; <a href="create"><input type="button" class="btn btn-sm btn-success"  name="boton" value="Registrat"/></a></br>
+<table>
 
-foreach ($query->result() as $user)
-{
-   echo $user->title;
-   echo $user->name;
-   echo $user->body;
+<?php
+foreach ($user_view as $key => $value) {
+  echo '<tr>';
+  foreach ($value as $valor) {
+  echo '<td>';
+  echo $valor;
+  echo '</td>';
+  }
 }
+
+?>
+</table>
 <!--<table id="taula" class="table table-hover table-condensed" border="1">
 <thead>
         <tr>
