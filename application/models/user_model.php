@@ -16,7 +16,9 @@ function hello(){
 function getUser(){
 
 $this->load->database();
-$this->db->query = ("select * from 'usuaris'");
+$query=$this->db->get('usuaris');
+
+return $query;
 
 }
 

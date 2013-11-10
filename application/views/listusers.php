@@ -40,16 +40,28 @@
 </br>
 </br>
 Crea el teu usuari aqu&iacute; <a href="create"><input type="button" class="btn btn-sm btn-success"  name="boton" value="Registrat"/></a></br>
-<table>
-
+<table id="taula" class="table table-hover table-condensed" border="1">
+<thead>
+        <tr>
+	    <th>id</th>
+            <th>Nom</th>
+            <th>Data naixement</th>
+            <th>Email</th>
+	    <th>Opcions</th>	
 <?php
-foreach ($user_view as $key => $value) {
-  echo '<tr>';
-  foreach ($value as $valor) {
-  echo '<td>';
-  echo $valor;
-  echo '</td>';
-  }
+if($query->num_rows() > 0)
+{
+    foreach($query->result() as $row)
+    {
+        echo "<tr>";
+	echo "<td>".$row->id."</td>";
+	echo "<td>".$row->nom."</td>";
+	echo "<td>".$row->data_naixement."</td>";
+	echo "<td>".$row->correu_electronic."</td>";
+	echo "<td>"."</td>";
+	echo "</tr>";
+    
+}
 }
 
 ?>
