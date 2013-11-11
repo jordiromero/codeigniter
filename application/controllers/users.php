@@ -21,7 +21,7 @@ class Users extends CI_Controller {
 		$this->load->view('modify');
 	}
 	public function listusers(){
-		//$this->User_model->hello();
+		
 		$users ['query'] = $this->user_model->getUser();
 				
 		$this->load->view('listusers', $users);

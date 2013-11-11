@@ -53,12 +53,13 @@ if($query->num_rows() > 0)
 {
     foreach($query->result() as $row)
     {
-        echo "<tr>";
+    echo "<tr>";
 	echo "<td>".$row->id."</td>";
 	echo "<td>".$row->nom."</td>";
 	echo "<td>".$row->data_naixement."</td>";
 	echo "<td>".$row->correu_electronic."</td>";
-	echo "<td>"."</td>";
+	echo "<td>".'<a href="modify"><input type="button" name="boton" class="btn btn-sm btn-primary" value="Modificar"/></a>&nbsp;'. 
+    '<a href="delete"><input type="button" class="btn btn-sm btn-danger" name="boton" value="Eliminar"/></a>'."</td>";
 	echo "</tr>";
     
 }
@@ -66,44 +67,6 @@ if($query->num_rows() > 0)
 
 ?>
 </table>
-<!--<table id="taula" class="table table-hover table-condensed" border="1">
-<thead>
-        <tr>
-	    <th>id</th>
-            <th>Usuari</th>
-            <th>Email</th>
-            <th>Data naixement</th>
-	    <th>Opcions</th>
-	
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-	    <td>1</td>
-            <td>Francesc Sampere</td>
-            <td>fsampere_4545@hotmail.com</td>
-            <td>19/05/1973</td>
-   	    <td><a href="modify/1"><input type="button" name="boton" class="btn btn-sm btn-primary" value="Modificar"/></a>
-	    <a href="delete/1"><input type="button" class="btn btn-sm btn-danger" name="boton" value="Eliminar"/></td></a>	
-        </tr>
-        <tr>
-	    <td>2</td>
-            <td>Federico Torres </td>
-            <td>fedtor@gmail.com</td>
-            <td>01/01/1963</td>
-	    <td><a href="modify/2"><input type="button" name="boton" class="btn btn-sm btn-primary" value="Modificar"/></a>
-	    <a href="delete/2"><input type="button" name="boton" class="btn btn-sm btn-danger" value="Eliminar"/></td></a>
-        </tr>
-        <tr>
-	    <td>3</td>
-	    <td>Samanta Villar</td>
-	    <td>sv77@yahoo.com</td>
-	    <td>25/03/1977</td>
-	    <td><a href="modify/3"><input type="button" name="boton" class="btn btn-sm btn-primary" value="Modificar"/></a>
-	    <a href="delete/3"><input type="button" name="boton" class="btn btn-sm btn-danger" value="Eliminar"/></td></a>
-        </tr>
-    </tbody>
-</table>-->
 
 
 <footer>

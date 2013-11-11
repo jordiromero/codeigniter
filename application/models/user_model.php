@@ -5,7 +5,7 @@ class User_model extends CI_Model{
 
 function __construct(){
 	parent::__construct();
-
+$this->load->database();
 }
 function hello(){
 
@@ -15,10 +15,15 @@ function hello(){
 
 function getUser(){
 
-$this->load->database();
+//$this->load->database();
 $query=$this->db->get('usuaris');
 
 return $query;
+
+}
+
+function insertUser(){
+
 
 }
 
