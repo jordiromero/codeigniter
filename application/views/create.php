@@ -38,7 +38,7 @@
 </br>
 </br>
 <h1>Crea el teu Usuari</h1>
-<form action="../index.php/users/create" method="post">
+<form action="http://localhost/codeigniterhelloworld/index.php/users/createUser" method="post">
           <table border = "0">
 			  
             <tr>
@@ -58,7 +58,7 @@
               <td><input type="text" name="correu_electronic"></td>
             </tr>
             <tr>
-             <td><input type="Button" value="Enviar"></td>
+             <td><input type="Submit" value="Enviar"></td>
               <td><input type="Reset" value="Cancelar"></td> 
             </tr> 
 
