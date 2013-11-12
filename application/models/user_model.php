@@ -22,7 +22,13 @@ return $query;
 
 }
 
-function insertUser(){
+function insertUser($id, $nom, $data_naixement, $correu_electronic){
+	$data = array(
+	'id' => $id,
+	'nom'=> $nom,
+	'data_naixement'=>$data_naixement,
+	'correu_electronic'=>$correu_electronic);
+	return $this->db->insert('usuaris', $data);
 
 
 }

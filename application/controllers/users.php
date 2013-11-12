@@ -10,7 +10,14 @@ class Users extends CI_Controller {
 	
 	public function create(){
 		
+		/*$id = $this->input->post('id'); 
+		$nom = $this->input->post('nom');
+		$data_naixement = $this->input->post('data_naixement');
+		$correu_electronic = $this->input->post('correu_electronic');
+		$this->user_model->insertUser($id, $nom, $data_naixement, $correu_electronic);
+		$this->load->helper('form');*/
 		$this->load->view('create');
+		
 	}
 	public function delete($id) {
 		
