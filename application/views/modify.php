@@ -38,6 +38,21 @@
 </br>
 </br>
 </br>
+<table>
+<?php
+if($query->num_rows() > 0)
+{
+    foreach($query->result() as $row)
+    {
+    echo "<tr>";
+	echo "<td>".$row->id."</td>";
+	echo "<td>".$row->nom."</td>";
+	echo "<td>".$row->data_naixement."</td>";
+	echo "<td>".$row->correu_electronic."</td>";
+}
+}
+?>
+</table>
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
@@ -58,7 +73,7 @@
 
 <footer>
         <p align="center">&copy; Jordi Romero</p>
-	</footer>
+</footer>
 </body>
 
 </html>

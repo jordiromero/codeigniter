@@ -27,12 +27,26 @@ function insertUser($id, $nom, $data_naixement, $correu_electronic){
 	'id' => $id,
 	'nom'=> $nom,
 	'data_naixement'=>$data_naixement,
-	'correu_electronic'=>$correu_electronic);
+	'correu_electronic'=>$correu_electronic); 
+	
 	return $this->db->insert('usuaris', $data);
 
 
 }
 
+function updateUser(){
+	
+	//$id, $nom, $data_naixement, $correu_electronic
+	/*$data = array(
+	'id' => $id,
+	'nom'=> $nom,
+	'data_naixement'=>$data_naixement,
+	'correu_electronic'=>$correu_electronic);*/ 
+return	$query=$this->db->get('usuaris');
+	/*$this->db->where('id', $id);
+    return $this->db->update('mi_tabla', $data);*/
+	
+}
 }
 
 ?>

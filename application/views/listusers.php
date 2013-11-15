@@ -58,8 +58,8 @@ if($query->num_rows() > 0)
 	echo "<td>".$row->nom."</td>";
 	echo "<td>".$row->data_naixement."</td>";
 	echo "<td>".$row->correu_electronic."</td>";
-	echo "<td>".'<a href="modify"><input type="button" name="boton" class="btn btn-sm btn-primary" value="Modificar"/></a>&nbsp;'. 
-    '<a href="delete"><input type="button" class="btn btn-sm btn-danger" name="boton" value="Eliminar"/></a>'."</td>";
+	echo "<td>".'<a href="modify/id"><input type="button" name="boton" class="btn btn-sm btn-primary" value="Modificar"/></a>&nbsp;'. 
+    '<a href="delete/$id"><input type="button" class="btn btn-sm btn-danger" name="boton" value="Eliminar"/></a>'."</td>";
 	echo "</tr>";
     
 }

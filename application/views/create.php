@@ -38,7 +38,7 @@
 </br>
 </br>
 <h1>Crea el teu Usuari</h1>
-<form action="http://localhost/codeigniterhelloworld/index.php/users/createUser" method="post">
+<form action= "http://localhost/codeigniterhelloworld/index.php/users/createUser" method="post">
           <table border = "0">
 			  
             <tr>
