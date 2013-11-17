@@ -38,13 +38,14 @@ class Users extends CI_Controller {
 		
 		$this->load->view('delete');
 	}
-	public function modify(){
+	public function modify($id){
 		
+		//$id = $this->input->post('id'); 
 		$users ['query'] = $this->user_model->updateUser();
 				
 		//$this->load->view('listusers', $users);
 
-		$this->load->view('modify', $users);
+		$this->load->view('modify',$users);
 	}
 	public function listusers(){
 		
