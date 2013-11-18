@@ -40,6 +40,7 @@
 </br>
 </br>
 Crea el teu usuari aqu&iacute; <a href="create"><input type="button" class="btn btn-sm btn-success"  name="boton" value="Registrat"/></a></br>
+<form action= "http://localhost/codeigniterhelloworld/index.php/users/modify" method="post">
 <table id="taula" class="table table-hover table-condensed" border="1">
 <thead>
         <tr>
@@ -58,8 +59,8 @@ if($query->num_rows() > 0)
 	echo "<td>".$row->nom."</td>";
 	echo "<td>".$row->data_naixement."</td>";
 	echo "<td>".$row->correu_electronic."</td>";
-	echo "<td>".'<a href="modify/id"</a><input type="button" name="boton" class="btn btn-sm btn-primary" value="Modificar"/></a>&nbsp;'. 
-    '<a href="delete/$id"><input type="button" class="btn btn-sm btn-danger" name="boton" value="Eliminar"/></a>'."</td>";
+	echo "<td>".'<input type="submit" name="boton" class="btn btn-sm btn-primary" value="Modificar" />&nbsp;'. 
+    '<input type="submit" class="btn btn-sm btn-danger" name="boton" value="Eliminar"/>'."</td>";
 	echo "</tr>";
     
 }
@@ -67,7 +68,7 @@ if($query->num_rows() > 0)
 
 ?>
 </table>
-
+</form>
 
 <footer>
         <p align="center">&copy; Jordi Romero</p>

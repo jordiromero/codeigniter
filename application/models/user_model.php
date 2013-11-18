@@ -37,15 +37,17 @@ function insertUser($id, $nom, $data_naixement, $correu_electronic){
 function updateUser($id){
 	
 	//$id, $nom, $data_naixement, $correu_electronic
-	/*$data = array(
-	'id' => $id,*/
-	$data = $id ='id';
+	$data = array(
+	'id' => $id);
+	//$data = $id ='id';
 	/*'nom'=> $nom,
 	'data_naixement'=>$data_naixement,
 	'correu_electronic'=>$correu_electronic);*/ 
-    return $query=$this->db->get('usuaris', $data);
-	/*$this->db->where('id', $id);
-    return $this->db->update('mi_tabla', $data);*/
+    //$query=$this->db->get('usuaris', $data);
+    //$this->db->where('id', $id);
+    //$this->db->update('usuaris', $data);
+	return $this->db->get('usuaris', $data);
+	
 	
 }
 

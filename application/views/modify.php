@@ -38,6 +38,7 @@
 </br>
 </br>
 </br>
+<form action= "http://localhost/codeigniterhelloworld/index.php/users/modify" method="post">
 <table>
 <?php
 if($query->num_rows() > 0)
@@ -53,6 +54,7 @@ if($query->num_rows() > 0)
 }
 ?>
 </table>
+</form>
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
