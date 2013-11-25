@@ -10,6 +10,44 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
 
+<script type="text/javascript" language="javascript" src="//localhost/codeigniterhelloworld/assets/DataTables/extras/TableTools/media/js/TableTools.js"></script>
+<script type="text/javascript" language="javascript" src="//localhost/codeigniterhelloworld/assets/DataTables/extras/TableTools/media/js/TableTools.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+/*
+ * Example initialisation
+ */
+$(document).ready( function () {
+	$('#taula').dataTable( {
+		"sDom": 'T&lt;"clear"&gt;lfrtip',
+		"oTableTools": {
+			"sSwfPath": "<?php  echo base_url('assets/DataTables/extras/TableTools/media/swf/copy_csv_xls_pdf.swf');?>",
+			 "aButtons": [
+                                {
+                                        "sExtends": "copy",
+                                        "sButtonText": "Copia"
+                                },
+                                {
+                                        "sExtends": "csv",
+                                        "sButtonText": "CSV"
+                                },
+                                {
+                                        "sExtends": "xls",
+                                        "sButtonText": "XLS"
+                                },
+                                {
+                                        "sExtends": "pdf",
+                                        "sButtonText": "PDF"
+                                },
+                                {
+                                        "sExtends": "print",
+                                        "sButtonText": "Print"
+                                },
+                        ]
+		}
+	});
+});
+</script>
 
 </head>
 <body>
@@ -40,7 +78,8 @@
 </br>
 </br>
 Crea el teu usuari aqu&iacute; <a href="create"><input type="button" class="btn btn-sm btn-success"  name="boton" value="Registrat"/></a></br>
-<form action= "http://localhost/codeigniterhelloworld/index.php/users/modify" method="post">
+
+<form action= "<?php echo base_url('index.php/users/modify');?>" method="post">
 <table id="taula" class="table table-hover table-condensed" border="1">
 <thead>
         <tr>
@@ -69,6 +108,8 @@ if($query->num_rows() > 0)
 ?>
 </table>
 </form>
+
+ 
 
 <footer>
         <p align="center">&copy; Jordi Romero</p>
