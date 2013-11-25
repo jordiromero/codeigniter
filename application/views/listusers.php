@@ -79,7 +79,7 @@ $(document).ready( function () {
 </br>
 Crea el teu usuari aqu&iacute; <a href="create"><input type="button" class="btn btn-sm btn-success"  name="boton" value="Registrat"/></a></br>
 
-<form action= "<?php echo base_url('index.php/users/modify');?>" method="post">
+<form action= "<?php echo base_url('index.php/users/modify/$row->id');?>" method="post">
 <table id="taula" class="table table-hover table-condensed" border="1">
 <thead>
         <tr>
@@ -94,7 +94,7 @@ if($query->num_rows() > 0)
     foreach($query->result() as $row)
     {
     echo "<tr>";
-	echo "<td>".$id=$row->id."</td>";
+	echo "<td>".$row->id."</td>";
 	echo "<td>".$row->nom."</td>";
 	echo "<td>".$row->data_naixement."</td>";
 	echo "<td>".$row->correu_electronic."</td>";
