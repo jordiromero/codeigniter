@@ -51,6 +51,7 @@ class Users extends MX_Controller {
 		
 	}
 	
+	
 }
 
 /* End of file welcome.php */

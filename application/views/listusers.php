@@ -10,7 +10,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" language="javascript" src="//localhost/codeigniterhelloworld/assets/DataTables/extras/TableTools/media/js/TableTools.js"></script>
+<!--<script type="text/javascript" language="javascript" src="//localhost/codeigniterhelloworld/assets/DataTables/extras/TableTools/media/js/TableTools.js"></script>
 <script type="text/javascript" language="javascript" src="//localhost/codeigniterhelloworld/assets/DataTables/extras/TableTools/media/js/TableTools.min.js"></script>
 
 <script type="text/javascript" charset="utf-8">
@@ -21,7 +21,7 @@ $(document).ready( function () {
 	$('#taula').dataTable( {
 		"sDom": 'T&lt;"clear"&gt;lfrtip',
 		"oTableTools": {
-			"sSwfPath": "<?php  echo base_url('assets/DataTables/extras/TableTools/media/swf/copy_csv_xls_pdf.swf');?>",
+			"sSwfPath": "",
 			 "aButtons": [
                                 {
                                         "sExtends": "copy",
@@ -47,7 +47,7 @@ $(document).ready( function () {
 		}
 	});
 });
-</script>
+</script>-->
 
 </head>
 <body>
@@ -84,27 +84,22 @@ Crea el teu usuari aqu&iacute; <a href="create"><input type="button" class="btn 
 <thead>
         <tr>
 	    <th>id</th>
-            <th>Nom</th>
-            <th>Data naixement</th>
-            <th>Email</th>
+        <th>Nom</th>
+        <th>Data naixement</th>
+        <th>Email</th>
 	    <th>Opcions</th>	
 <?php
-if($query->num_rows() > 0)
-{
-    foreach($query->result() as $row)
-    {
+if($query->num_rows() > 0){
+    foreach($query->result() as $row){
     echo "<tr>";
 	echo "<td>".$row->id."</td>";
 	echo "<td>".$row->nom."</td>";
 	echo "<td>".$row->data_naixement."</td>";
 	echo "<td>".$row->correu_electronic."</td>";
-	echo "<td>".'<a href='<?php $row->id ?>'><input type="button" name="boton" class="btn btn-sm btn-primary" value="Modificar" /></a>&nbsp;'. 
-    '<input type="submit" class="btn btn-sm btn-danger" name="boton" value="Eliminar"/>'."</td>";
+	echo "<td>".."</td>";
 	echo "</tr>";
-    
+	}
 }
-}
-
 ?>
 </table>
 </form>
@@ -113,7 +108,7 @@ if($query->num_rows() > 0)
 
 <footer>
         <p align="center">&copy; Jordi Romero</p>
-      <!--  <p><?php echo $hello;?></p> -->
+      <!--   -->
 	</footer>
 </body>
 
