@@ -33,6 +33,11 @@ function insertUser($id, $nom, $data_naixement, $correu_electronic){
 
 
 }
+function get($id){
+	$result = $this->db->get_where('usuaris', array('id' => $id));
+    return $result->row();
+
+}
 
 /*function updateUser($id){
 	
@@ -46,14 +51,14 @@ function insertUser($id, $nom, $data_naixement, $correu_electronic){
 	
 }*/
 
-/*function deleteUser($id){
+function deleteUser($id){
 	
 	
 	$data = array(
 	'id' => $id);
 	$this->db->where('id', $id);
 	$this->db->delete('usuaris', $data);
-}*/
+}
 
 }
 
