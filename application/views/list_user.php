@@ -1,9 +1,11 @@
 <div class="container">
+	
+
 	Crea el teu usuari aqu&iacute; <a href="<?php echo base_url();?>index.php/users/createUser"><input type="button" class="btn btn-sm btn-success"  name="boton" value="Registrat"/></a></br></br>
-	<table id="taula" class="table table-hover table-condensed" border="1">
+	<table cellpadding="3" cellspacing="3" border="1" class="display table table-hover table-condensed" id="example">
 		<thead>
-        	<tr>
-	   			<th>id</th>
+        	<tr >
+	   			<th>ID</th>
         		<th>Nom</th>
         		<th>Data naixement</th>
         		<th>Email</th>
@@ -14,7 +16,7 @@
 			
 			
     	<?php	foreach($query->result() as $row){?>
-    		<tr>
+    		<tr class="odd_gradeX">
 			<td><?php echo $row->id;?></td>
 			<td><?php echo $row->nom;?></td>
 			<td><?php echo $row->data_naixement;?></td>
@@ -26,6 +28,18 @@
 			
 		</tbody>	
 	</table>
+	
+
+	<script type="text/javascript">
+			$(document).ready( function () {
+			var oTable = $('#example').dataTable( {
+				"sDom": 'RC<"clear">lfrtip',
+				"aoColumnDefs": [
+				{ "bVisible": true, "aTargets": [ 1 ] }
+						]
+				} );
+			} );
+	</script>
 
 
 </div>
