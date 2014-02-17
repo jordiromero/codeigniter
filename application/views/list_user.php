@@ -1,8 +1,9 @@
-<div class="container">
+
+	<div class="container">
 	
 
 	Crea el teu usuari aqu&iacute; <a href="<?php echo base_url();?>index.php/users/createUser"><input type="button" class="btn btn-sm btn-success"  name="boton" value="Registrat"/></a></br></br>
-	<table cellpadding="3" cellspacing="3" border="1" class="display table table-hover table-condensed" id="example">
+	<table cellpadding="3" cellspacing="3" border="1" class="display table table-hover table-condensed " id="example">
 		<thead>
         	<tr >
 	   			<th>ID</th>
@@ -37,9 +38,14 @@
 				"aoColumnDefs": [
 				{ "bVisible": true, "aTargets": [ 1 ] }
 						]
+						
 				} );
+				
 			} );
 	</script>
-
+	
+	
+	
+		
 
 </div>

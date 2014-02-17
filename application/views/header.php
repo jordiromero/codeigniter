@@ -5,6 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/ColVis/css/dataTables.colVis.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/ColReorder/css/dataTables.colReorder.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/FixedHeader/css/dataTables.fixedHeader.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/TableTools/css/dataTables.tableTools.css">
   
 	     <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
@@ -23,6 +25,8 @@
 	<script type="text/javascript" charset="utf-8" src="<?php echo base_url();?>assets/ColVis/js/dataTables.colVis.js"></script>
 	<script type="text/javascript" charset="utf-8" src="<?php echo base_url();?>assets/ColReorder/js/dataTables.colReorder.js"></script>
 	<script type="text/javascript" charset="utf-8" src="<?php echo base_url();?>assets/ColVis/js/ColVis.js"></script>
+	<script type="text/javascript" charset="utf-8" src="<?php echo base_url();?>assets/FixedHeader/js/dataTables.fixedHeader.js"></script>
+	<script type="text/javascript" charset="utf-8" src="<?php echo base_url();?>assets/TableTools/js/dataTables.tableTools.js"></script>
 
       <!-- Latest compiled and minified JavaScript -->
 	<!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>-->
