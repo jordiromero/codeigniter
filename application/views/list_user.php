@@ -3,7 +3,7 @@
 	
 
 	Crea el teu usuari aqu&iacute; <a href="<?php echo base_url();?>index.php/users/createUser"><input type="button" class="btn btn-sm btn-success"  name="boton" value="Registrat"/></a></br></br>
-	<table cellpadding="3" cellspacing="3" border="1" class="display table table-hover table-condensed " id="example">
+	<table cellpadding="3" cellspacing="3" border="1" class="display table table-hover table-condensed " id="users">
 		<thead>
         	<tr >
 	   			<th>ID</th>
@@ -30,21 +30,24 @@
 		</tbody>	
 	</table>
 	
-
+	
+	
 	<script type="text/javascript">
-			$(document).ready( function () {
-			var oTable = $('#example').dataTable( {
+		$(document).ready( function () {
+			var oTable = $('#users').dataTable( {
+		       // "bScrollCollapse": false,
+		        //"bPaginate": false,
+		        "sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
 				"sDom": 'RC<"clear">lfrtip',
 				"aoColumnDefs": [
 				{ "bVisible": true, "aTargets": [ 1 ] }
 						]
-						
-				} );
-				
-			} );
+					});
+				new FixedHeader( oTable );
+		
+		});
+	
 	</script>
-	
-	
 	
 		
 
