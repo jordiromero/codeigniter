@@ -1,4 +1,4 @@
-codeignitre
+codeigniter
 ===========
 
-repositori per a codi ignite
+repositori per a code igniter
